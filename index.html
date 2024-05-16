@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <script src="/index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center h-screen bg-cyan-100">
+    <div class="flex flex-col items-center w-2/4">
+        <div class="w-[28%]">
+            <h1 class="font-bold">
+                Digite seu CPF
+            </h1>
+        </div>
+        <div>
+            <input id="cpf" type="text" oninput="mascara(this)" class="border border-gray-300 p-2">
+            <button onclick="cpfValid()" class="bg-blue-500 text-white p-2 ml-2">Enviar</button>
+        </div>
+        <div id="addResult" class="w-[28%]">
+
+        </div>
+    </div>
+</body>
+
+</html>
