@@ -2,7 +2,7 @@ function mascara(i){
    
     var v = i.value;
     
-    if(isNaN(v[v.length-1])){ // impede entrar outro caractere que não seja número
+    if(isNaN(v[v.length-1])){
        i.value = v.substring(0, v.length-1);
        return;
     }
@@ -27,7 +27,6 @@ function cpfValid(){
     }
     return cpf
 }
-
 
 function cpfValidator (cpfNumber){
     Object.defineProperty(this, 'cpfLimpo', {
